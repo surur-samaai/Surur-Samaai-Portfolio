@@ -49,7 +49,7 @@ const Hero = () => {
             <Mail className="w-6 h-6" />
           </a>
           <a
-            href="#"
+            href="/Surur_Samaai_CV.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="p-3 rounded-lg glass hover:scale-110 transition-transform"
