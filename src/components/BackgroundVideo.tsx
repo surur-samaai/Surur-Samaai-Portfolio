@@ -22,7 +22,7 @@ const BackgroundVideo: React.FC = () => {
           <source src="/videos/galaxy_bg_video.webm" type="video/webm" />
         </video>
       ) : (
-        <div className="absolute inset-0 bg-[url('/images/hero-fallback.jpg')] bg-center bg-cover" />
+        <div className="absolute inset-0 bg-[url('/images/hero-fallback.png')] bg-center bg-cover" />
       )}
 
       

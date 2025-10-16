@@ -1,6 +1,6 @@
 const experienceData = [
   {
-    title: "Junior Developer Inter",
+    title: "Junior Developer Intern",
     company: "Life Choices Studio",
     period: "2025 - Present",
     description: "At LC Studio, I was part of a hands-on internship program where I collaborated on multiple real-world software projects across web, mobile, and IoT",
@@ -9,7 +9,7 @@ const experienceData = [
     title: "Tutor/Admin Assistant",
     company: "University of the Western Cape",
     period: "2022 - 2023",
-    description: "tutored and conducted both one-on-one and class consultations to support academic performance",
+    description: "Tutored and conducted both one-on-one and class consultations to support academic performance",
   },
   {
     title: "Sales Assistant",
