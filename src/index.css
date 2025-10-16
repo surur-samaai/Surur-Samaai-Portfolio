@@ -2,13 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
 
 @layer base {
   :root {
-    /* Space theme - dark with purple/blue accents */
     --background: 222 47% 5%;
     --foreground: 210 40% 98%;
 
@@ -18,18 +14,15 @@ All colors MUST be HSL.
     --popover: 222 47% 8%;
     --popover-foreground: 210 40% 98%;
 
-    /* Purple primary accent */
     --primary: 258 90% 66%;
     --primary-foreground: 210 40% 98%;
 
-    /* Blue secondary accent */
     --secondary: 199 89% 48%;
     --secondary-foreground: 210 40% 98%;
 
     --muted: 222 47% 12%;
     --muted-foreground: 215 20% 65%;
 
-    /* Accent for highlights */
     --accent: 258 90% 66%;
     --accent-foreground: 210 40% 98%;
 
@@ -42,12 +35,10 @@ All colors MUST be HSL.
 
     --radius: 0.75rem;
 
-    /* Gradient stops for purple-blue-pink gradient */
     --gradient-start: 258 90% 66%;
     --gradient-mid: 199 89% 48%;
     --gradient-end: 326 78% 68%;
 
-    /* Glass effect colors */
     --glass-bg: 222 47% 8% / 0.4;
     --glass-border: 210 40% 98% / 0.1;
   }
@@ -70,24 +61,20 @@ All colors MUST be HSL.
 }
 
 @layer utilities {
-  /* Gradient text */
   .gradient-text {
     @apply bg-gradient-to-r from-[hsl(var(--gradient-start))] via-[hsl(var(--gradient-mid))] to-[hsl(var(--gradient-end))] bg-clip-text text-transparent;
   }
 
-  /* Glass effect */
   .glass {
     background: rgba(10, 10, 31, 0.4);
     backdrop-filter: blur(12px);
     border: 1px solid rgba(255, 255, 255, 0.1);
   }
 
-  /* Gradient button */
   .gradient-btn {
     @apply bg-gradient-to-r from-[hsl(var(--gradient-start))] via-[hsl(var(--gradient-mid))] to-[hsl(var(--gradient-end))] transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-primary/50;
   }
 
-  /* Animated gradient border */
   .gradient-border {
     position: relative;
     background: hsl(var(--card));

@@ -1,4 +1,3 @@
-// src/components/Contact.tsx
 import { useState } from "react";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
@@ -53,7 +52,6 @@ const Contact = () => {
         toast.success("Message sent successfully!");
         setFormData({ name: "", email: "", subject: "", message: "" });
       } else {
-        // Formspree can return errors in different shapes; be safe
         const errorMsg =
           (data && data.error) ||
           (data && data.errors && data.errors.map((x: any) => x.message).join(", ")) ||

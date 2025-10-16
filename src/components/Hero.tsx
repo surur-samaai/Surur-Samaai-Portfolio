@@ -1,17 +1,13 @@
-// src/components/Hero.tsx
 import { Github, Linkedin, Mail, Rocket, Dock } from "lucide-react";
 import BackgroundVideo from "./BackgroundVideo";
 
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center px-6 overflow-hidden">
-      {/* Background video (absolute, fills the hero) */}
       <BackgroundVideo />
 
-      {/* Optional dark overlay to improve contrast between video and text */}
       <div className="absolute inset-0 bg-black/40 z-10 pointer-events-none" />
 
-      {/* Main content - placed above video and overlay */}
       <div className="relative z-20 container mx-auto text-center">
         <h1 className="text-6xl md:text-8xl font-bold mb-4 animate-fade-in-up">
           <span className="gradient-text">Surur</span>

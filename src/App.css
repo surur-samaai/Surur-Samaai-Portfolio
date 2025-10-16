@@ -1,13 +1,13 @@
 /* Background Video Styles (adjusted to be a hero-background, not a fixed viewport layer) */
 .site-bg-video {
-  position: absolute; /* changed from fixed to absolute so it's contained in the hero */
-  inset: 0;           /* top:0; right:0; bottom:0; left:0; */
+  position: absolute; /* conts bg video in the hero */
+  inset: 0;           
   z-index: 0;         /* behind hero content */
   overflow: hidden;
   pointer-events: none;
 }
 
-/* video should cover the container (hero) area */
+/* ensures bg video covers entire hero section */
 .site-bg-video__video {
   position: absolute;
   inset: 0;
