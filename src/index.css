@@ -5,6 +5,7 @@
 
 @layer base {
   :root {
+    /* Dark-mode tokens (existing) */
     --background: 222 47% 5%;
     --foreground: 210 40% 98%;
 
@@ -39,8 +40,55 @@
     --gradient-mid: 199 89% 48%;
     --gradient-end: 326 78% 68%;
 
+    /* glass colors are stored as "r g% b% / alpha" so you can use hsl(var(--...)) / <alpha> */
     --glass-bg: 222 47% 8% / 0.4;
     --glass-border: 210 40% 98% / 0.1;
+
+    --hero-overlay: 0.40;
+    
+    --nav-overlay: 0.00
+  }
+
+  /* Light theme overrides — toggled by adding `class="light"` to <html> */
+  :root.light {
+    --background: 0 0% 100%;         /* white */
+    --foreground: 220 18% 12%;       /* near-black text */
+
+    --hero-overlay: 0.75;
+
+    --nav-overlay: 0.75;
+
+    --card: 210 16% 98%;             /* very light card background */
+    --card-foreground: 220 18% 12%;
+
+    --popover: 210 16% 98%;
+    --popover-foreground: 220 18% 12%;
+
+    --primary: 238 85% 48%;          /* darker primary for light bg */
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 200 85% 40%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 220 15% 96%;
+    --muted-foreground: 215 10% 35%;
+
+    --accent: 238 85% 48%;
+    --accent-foreground: 220 18% 12%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 220 18% 12%;
+
+    --border: 220 16% 90%;
+    --input: 220 16% 96%;
+    --ring: 238 85% 48%;
+
+    --gradient-start: 238 85% 48%;
+    --gradient-mid: 200 85% 40%;
+    --gradient-end: 326 78% 68%;
+
+    --glass-bg: 210 16% 98% / 0.6;
+    --glass-border: 220 18% 12% / 0.06;
   }
 }
 
@@ -50,7 +98,8 @@
   }
 
   body {
-    @apply bg-background text-foreground antialiased;
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
     overflow-x: hidden;
   }
 
@@ -66,9 +115,12 @@
   }
 
   .glass {
-    background: rgba(10, 10, 31, 0.4);
+    /* Use the CSS variables for consistent theming */
+    background: color-mix(in srgb, hsl(var(--card)) 10%, hsl(var(--card)) 90%); /* subtle base for glass */
     backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid color-mix(in srgb, hsl(var(--glass-border)), black 0%); /* uses glass-border var */
+    /* fallback for browsers not supporting color-mix: */
+    background-color: hsl(var(--card));
   }
 
   .gradient-btn {
@@ -91,4 +143,8 @@
     -webkit-mask-composite: xor;
     mask-composite: exclude;
   }
+
+  .hero-heading-shadow {
+  text-shadow: 0 6px 18px rgba(0,0,0,0.45);
+}
 }

@@ -8,7 +8,7 @@ const About = () => {
           <div className="relative">
             <div className="glass rounded-2xl overflow-hidden aspect-[4/3] animate-fade-in-up">
               <img
-                src="/images/professional_image.jpg"
+                src="/images/professional_image-dark.jpg"
                 alt="Developer workspace"
                 className="w-full h-full object-cover"
               />

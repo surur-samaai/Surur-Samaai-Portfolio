@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Button } from "./ui/button";
+import ThemeToggle from "./ThemeToggle";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -26,7 +27,7 @@ const Navbar = () => {
       <div className="container mx-auto px-6 flex items-center justify-between">
         <div className="text-2xl font-bold gradient-text">MS</div>
         
-        <div className="hidden md:flex items-center gap-8">
+        <div className="gradient-text hidden md:flex items-center gap-8">
           <button onClick={() => scrollToSection("about")} className="text-foreground/80 hover:text-foreground transition-colors">
             About
           </button>
@@ -50,12 +51,15 @@ const Navbar = () => {
           </button>
         </div>
 
-        <Button
-          onClick={() => scrollToSection("contact")}
-          className="gradient-btn rounded-full px-6"
-        >
-          Hire Me
-        </Button>
+        <div className="flex items-center gap-4">
+  <ThemeToggle />
+  <Button
+    onClick={() => scrollToSection("contact")}
+    className="gradient-btn rounded-full px-6"
+  >
+    Hire Me
+  </Button>
+</div>
       </div>
     </nav>
   );

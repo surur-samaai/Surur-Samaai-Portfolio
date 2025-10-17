@@ -1,6 +1,17 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <script>
+      (function () {
+        try {
+          const theme = localStorage.getItem('site-theme');
+          if (theme === 'light') {
+            document.documentElement.classList.add('light');
+          }
+        } catch (e) {
+        }
+      })();
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Surur Samaai - Full-Stack Developer Portfolio</title>
@@ -12,7 +23,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:image" content="" />
 
-    <link rel="icon" type="image/ico" href="/public/flavicon.ico" />
+    <link rel="icon" type="image/x-icon" href="/flavicon.ico" />
 
     <!-- <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="" />

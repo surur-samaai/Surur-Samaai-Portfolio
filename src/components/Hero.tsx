@@ -6,16 +6,17 @@ const Hero = () => {
     <section className="relative min-h-screen flex items-center justify-center px-6 overflow-hidden">
       <BackgroundVideo />
 
-      <div className="absolute inset-0 bg-black/40 z-10 pointer-events-none" />
+      <div className="absolute inset-0 z-10 pointer-events-none"
+  style={{ backgroundColor: `rgba(0,0,0, var(--hero-overlay))` }} />
 
       <div className="relative z-20 container mx-auto text-center">
-        <h1 className="text-6xl md:text-8xl font-bold mb-4 animate-fade-in-up">
-          <span className="gradient-text">Surur</span>
-        </h1>
+        <h1 className="text-6xl md:text-8xl font-bold mb-4 animate-fade-in-up hero-heading-shadow">
+  <span className="gradient-text">Surur</span>
+</h1>
 
-        <h2 className="text-2xl md:text-4xl font-semibold mb-6 text-foreground/90">
-          Full-Stack Developer
-        </h2>
+<h2 className="text-2xl md:text-4xl font-semibold mb-6 text-foreground/90 hero-heading-shadow">
+  Full-Stack Developer
+</h2>
 
         <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-8">
           Delivering powerful full-stack systems driven by a passion for solving real-world challenges.

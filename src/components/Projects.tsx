@@ -16,7 +16,7 @@ const projectsData = [
     title: "E-Commerce Website(PrimeFit)",
     description:
       "PrimeFit is a full-stack e-commerce fitness platform that makes working out from home simple and convenient. Built with Vue.js, Node.js, and MySQL, it offers a subscription-based model where users can access gym equipment, workout plans, and personal trainers — all in one place. Designed for ease, flexibility, and motivation, PrimeFit redefines fitness by bringing the gym to your home.",
-    image: "/images/primefit.jpg",
+    image: "/images/primefit-dark.jpg",
     tags: ["Node.js", "Vue.js", "MySQL", "Javascript"],
     github: "https://github.com/surur-samaai/E-commerece_Project/tree/main",
     demo: "#",
@@ -25,7 +25,7 @@ const projectsData = [
     title: "Digital Tracking System(Iliso)",
     description:
       "A real-time attendance management solution built using Python, MySQL, and Google Sheets integration. This system uses NFC technology to allow employees to clock in and out seamlessly, while automatically updating a live dashboard that tracks on-site and off-site staff. The management at LC Studio decided to use our system to track the attendance of their employees.",
-    image: "/images/iliso.jpg",
+    image: "/images/iliso-dark.jpg",
     tags: ["Python", "PHP", "MySQL", "Javascript", "HTML", "Rasberry Pi"],
     github: "https://github.com/surur-samaai/iliso_digital_tracking_system/tree/main",
     demo: "#",
@@ -33,7 +33,7 @@ const projectsData = [
   {
     title: "Android Data Aggregation App(Price Pulse)",
     description: "A Flutter-based mobile application that scrapes real-time product prices from major South African retailers including Pick n Pay, Woolworths, Checkers, and Game/Makro. The app allows users to instantly compare prices across stores through a clean, responsive interface. Built using Flutter and Python (BeautifulSoup/Playwright) for scraping, the project also explores the ethical and legal aspects of web data extraction, delivering a fully functional and research-backed MVP.",
-    image: "/images/pricepulse.jpg",
+    image: "/images/pricepulse-dark.jpg",
     tags: ["Dart", "Flutter", "Python"],
     github: "https://github.com/keanan557/Price-Pulse/tree/main",
     demo: "#",
@@ -192,12 +192,12 @@ const Projects = () => {
             </p>
 
             <div className="flex justify-end">
-              <button
+              {/* <button
                 onClick={closeModal}
                 className="px-4 py-2 rounded-md bg-primary/10 border border-primary/20 text-primary hover:opacity-90"
               >
                 Close
-              </button>
+              </button> */}
             </div>
           </div>
         </div>
