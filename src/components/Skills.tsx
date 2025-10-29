@@ -9,17 +9,27 @@ const skillsData = [
   { name: "Java", icon: "/images/java.svg" },
   { name: "MySQL", icon: "/images/mysql.svg" },
   { name: "PostgreSQL", icon: "/images/postgres.svg" },
-  { name: "Oracle", icon: "/images/oracle.svg" },
-  { name: "HTML", icon: "/images/html.svg" },
-  { name: "CSS", icon: "/images/css.svg" },
+  // { name: "Oracle", icon: "/images/oracle.svg" },
+  // { name: "HTML", icon: "/images/html.svg" },
+  // { name: "CSS", icon: "/images/css.svg" },
   { name: "Python", icon: "/images/python.svg" },
   { name: "TypeScript", icon: "/images/typescript.svg" },
   { name: "PHP", icon: "/images/php.svg" },
   { name: "Wordpress", icon: "/images/wordpress.svg" },
   { name: "Flutter", icon: "/images/flutter.svg" },
-  { name: "Github", icon: "/images/github.svg" },
+  // { name: "Github", icon: "/images/github.svg" },
 ];
 
+// const badgesData = [
+//   "/images/cloud-essentials.png",
+//   "/images/LifeChoicesAcademy-APIIntegrationDeveloper-2025-08-07.png",
+//   "/images/LifeChoicesAcademy-WordPressSiteBuilderPortfolioEdition-2025-05-09.png",
+//   "/images/LifeChoicesAcademy-UIUXDesignFoundations&Practice-2025-04-17.png",
+//   "/images/LifeChoicesAcademy-SCRUMProjectPlanning&AgileFundamentals-2025-03-16.png",
+//   "/images/LifeChoicesAcademy-Real-TimeSystemsDeveloper-2025-04-23.png",
+//   "/images/LifeChoicesAcademy-MobileAppDeveloper-2025-07-21.png",
+//   // add more badge png paths here...
+// ];
 const makeThemedPath = (original: string, theme: "light" | "dark") => {
   // Turn "/images/foo.svg" into "/images/foo-light.svg" or "/images/foo-dark.svg"
   const lastSlash = original.lastIndexOf("/");
@@ -56,6 +66,8 @@ const Skills: React.FC = () => {
     };
   }, []);
 
+  // const marqueeBadges = [...badgesData, ...badgesData];
+
   return (
     <section id="skills" className="relative py-20 px-6">
       <div className="container mx-auto">
@@ -90,10 +102,26 @@ const Skills: React.FC = () => {
                 />
                 <h3 className="text-lg font-semibold">{skill.name}</h3>
               </div>
-            );
+            ); 
           })}
         </div>
+        
       </div>
+      {/* <div className="max-w-4xl mx-auto mt-10">
+          <div className="text-center mb-4">
+            <div className="marquee-heading">Badges</div>
+          </div>
+
+          <div className="marquee">
+            <div className="marquee__track" role="list" aria-label="Badges marquee">
+              {marqueeBadges.map((badgePath, idx) => (
+                <div className="marquee__item" role="listitem" key={`${badgePath}-${idx}`}>
+                  <img src={badgePath} alt={`Badge ${idx + 1}`} />
+                </div>
+              ))}
+            </div>
+          </div>
+        </div> */}
     </section>
   );
 };

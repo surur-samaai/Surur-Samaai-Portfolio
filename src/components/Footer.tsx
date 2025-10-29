@@ -42,6 +42,7 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">Get in Touch</h4>
             <p className="text-muted-foreground mb-4">Email: msururs1@gmail.com</p>
+            <p className="text-muted-foreground mb-4">Cell: 071 874 9000</p>
             <div className="flex gap-4">
               <a
                 href="https://github.com/surur-samaai"
