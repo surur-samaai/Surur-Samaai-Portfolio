@@ -19,7 +19,7 @@ const projectsData = [
     image: "/images/primefit-dark.jpg",
     tags: ["Node.js", "Vue.js", "MySQL", "Javascript"],
     github: "https://github.com/surur-samaai/E-commerece_Project/tree/main",
-    demo: "#",
+    demo: "https://gymprimefit.netlify.app/",
   },
   {
     title: "Digital Tracking System(Iliso)",
