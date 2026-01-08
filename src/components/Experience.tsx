@@ -1,8 +1,14 @@
 const experienceData = [
   {
+    title: "Junior Software Developer Intern",
+    company: "CustomApp",
+    period: "2026 - Present",
+    description: "Working on cloud-based web and mobile platforms, supporting client-facing solutions across diverse industries. Collaborating in an agile, remote team environment, gaining exposure to real-world production systems, workflows, and client-driven development while building practical experience with JavaScript, Meta, WhatsApp Workflows, and modern development tools.",
+  },
+  {
     title: "Junior Developer Intern",
     company: "Life Choices Studio",
-    period: "2025 - Present",
+    period: "2025 - 2026",
     description: "At LC Studio, I was part of a hands-on internship program where I collaborated on multiple real-world software projects across web, mobile, and IoT",
   },
   {
